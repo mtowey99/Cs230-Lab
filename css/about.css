@@ -7,12 +7,11 @@ p{
     color: rgb(0, 0, 0);
 }
 .about{
-    background-color: royalblue;
+    background-color: rgb(0, 217, 255);
+    font-size: 24;
     padding: 8px;
 }
-.c1{
-    color: royalblue;
-}
+
 img{
     height: 200px;
     width: 240px;
@@ -23,7 +22,18 @@ img{
     margin: 10px;
     width: 23%;
 }
-.card{
-    box-shadow: 0px 4px 8px 0 #b3b3b3f5;
+.card1{
+    box-shadow: 0px 4px 8px 0 royalblue;
+    padding: 0 16px 0 16px;
+}
+.card2{
+    box-shadow: 0px 4px 8px 0 darkgreen;
+    padding: 0 16px 0 16px;
+}
+.card3{
+    box-shadow: 0px 4px 8px 0 #adababf5;
+}
+.card4{
+    box-shadow: 0px 4px 8px 0 #ff0101f5;
     padding: 0 16px 0 16px;
 }
