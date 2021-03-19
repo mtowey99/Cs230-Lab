@@ -1,55 +1,19 @@
-<main>
-    <link rel="stylesheet" href="css/about.css">
+<h5 style="text-align: center;"> No reviews, yet! Be the first!</h5>
 
-    <div class="about">
-        <h1>About us</h1>
-        <p>evbhschvwehgiuwhdhkjxnbajkhasjlk</p>
+<div class="card mx-auto" style= "width:30%; padding:5px; margin-bottom: 10px;">
+    <div class="media">
+        <img class="mr-3" src="'.$picpath.'" style="max-width: 75px; max-height:75px; border-radius: 50%;">
+        
+        <div class="media-body">
+            <h5 class ="mt-0">$row['uname']</h5>
+            <p>'.$row['revdate'].'</p>
+            <p>'.$row['reviewtext'].'</p>
         </div>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <img src="images/EliManning.jpeg">
-                    <div class="container">
-                        <h2>CEO</h2>
-                        <p>Eli Manning</p>
-                        <p>Email: BradysFather10@superbowl.com</p>
+    </div>
+</div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="images/Cabbages.jpeg">
-                    <div class="container">
-                        <h2>Cabbage Expert</h2>
-                        <p>Cabbage Merchent</p>
-                        <p>Email: MyCabbagessss@Avatar.com</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="images/Aang.jpeg">
-                    <div class="container">
-                        <h2>Avatar</h2>
-                        <p>Aang</p>
-                        <p>Email: FlameoAang@Avatar.com</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="images/Korra.jpeg">
-                    <div class="container">
-                        <h2>New Avatar</h2>
-                        <p>Korra</p>
-                        <p>Email: WhoNeedsAir@Avatar.com</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-</main>
+<div class = "container" style = "text-align: center">
+    <h1>'.avg.'</h1>
+    <div class = "container" style = "margin-bottom: 10px;">',stars($avg).'</div>
+    <p>Number of ratings: '.round($row2['Total'], 1).'</p>
+</div>

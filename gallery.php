@@ -14,10 +14,11 @@ require 'includes/header.php';
 
     while($row = mysqli_fetch_assoc($query)){
         echo '<div class = "card">
-        <b href ="review.php?='.$row['pid'].'" > </a>
+        <b href ="review.php?id='.$row['pid'].'" > 
         <img src="gallery/'.$row["picpath"].'">
         <h3>'.$row["title"].'</h3>
         <p>'.$row["descript"].'</p>
+        </b>
         </div>';
     }
 ?>
